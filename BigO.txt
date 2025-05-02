@@ -1,0 +1,15 @@
+Big O notation is a mathematical way to describe the Performance of algorithm especially in terms
+of Time and Space requirements as the Input Size grows.
+
+Big O gives you the worst case estimate of how an algorithm behaves when the Input Size(N) increases.
+helping us compare different algorithms and choose the most efficent one.
+
+Big O       | What it Means                        | Example                                 | Analogy
+----------- | ------------------------------------- | ----------------------------------------| -----------------------------------------------
+O(1)        | Constant time – doesn’t grow with n   | Access an element in an array: arr[5]   | Like picking a book from a shelf by index
+O(log n)    | Fast – cuts the problem in half       | Binary search in a sorted array         | Like guessing a number: "higher/lower"
+O(n)        | Grows with input size                 | Looping through all items in a list     | Like checking each book one by one
+O(n log n)  | Slightly slower than linear           | Merge sort or quicksort                 | Like organizing books using divide & conquer
+O(n²)       | Very slow – nested loops              | Bubble sort, comparing every pair       | Like comparing every student with every other
+O(2ⁿ)       | Extremely slow                        | Recursive Fibonacci                     | Like trying every possibility in a puzzle
+O(n!)       | Unbelievably slow                     | Brute-force for TSP (all permutations)  | Like trying every way to arrange books
