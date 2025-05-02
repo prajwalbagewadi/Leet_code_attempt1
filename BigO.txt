@@ -55,3 +55,49 @@ Quick Tip:
 - Nested loop        → O(n²)
 - Halving each time → O(log n)
 - Constant work      → O(1)
+
+Example 1: constant Time(O(1))
+System.out.println("hello");
+- This Runs once, no matter what N is.
+- Big O = O(1)
+
+Example 2: Linear Time — O(n)
+for (int i=0; i<n; i++) {
+  sop(i);
+}
+- Runs n times -> if n=5,runs 5 times
+- Big O = O(n)
+
+Example 3: Quadratic Time — O(n²)
+for (int i=0; i<n; i++) {
+  for (int j=0; j<n; j++) {
+      sop(i+","+j)
+  }
+}
+- Outer loop = n times
+- Inner loop = n times
+- Total = n*n = O(n^2)
+
+Example 4: Logarithmic Time — O(log n)
+int n=100;
+while (n>1) {
+  System.out.println("n="+n);
+  n=n/2;
+}
+output :
+Try programiz.pro
+n=100
+n=50
+n=25
+n=12
+n=6
+n=3
+- n becomes half each time -> 100 -> 50 -> 25 -> ...
+- This is O(log n)(like binary search)
+
+| Code Pattern      | Big O    |
+| ----------------- | -------- |
+| One step          | O(1)     |
+| One loop          | O(n)     |
+| Loop inside loop  | O(n²)    |
+| Halving each time | O(log n) |
