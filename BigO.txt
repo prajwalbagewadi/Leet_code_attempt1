@@ -13,3 +13,45 @@ O(n log n)  | Slightly slower than linear           | Merge sort or quicksort   
 O(n²)       | Very slow – nested loops              | Bubble sort, comparing every pair       | Like comparing every student with every other
 O(2ⁿ)       | Extremely slow                        | Recursive Fibonacci                     | Like trying every possibility in a puzzle
 O(n!)       | Unbelievably slow                     | Brute-force for TSP (all permutations)  | Like trying every way to arrange books
+
+To Calculate Big O notation you analyze how the number of operations in your algorithm grows as the Input Size(N) increases.
+
+How to Calculate 
+
+1. Identify the input size (n)
+Look at the variables that represent the size of the input (e.g., array length, number of nodes).
+
+2. Count basic operations
+Count the number of times loops, recursion, or function calls are executed.
+
+3. Focus on the dominant term
+Ignore constants and less significant terms. Big O only cares about growth as n becomes large.
+
+Example: 3n + 5 → O(n)
+
+4. Drop constants
+O(2n) becomes O(n)
+
+O(5n² + 3n) becomes O(n²)
+
+5. Check nested structures
+A loop inside another loop multiplies complexity.
+
+6. For recursive functions
+Write a recurrence relation, then solve it.
+
+
+Step | What to Do                            | Purpose / Tip
+-----|----------------------------------------|--------------------------------------------
+1    | Look for loops or recursion            | Repeated actions mean growing time
+2    | Count how many times they run          | Helps find total operations
+3    | Multiply nested loops (if any)         | Each level of loop increases growth
+4    | Add separate loops                     | Then choose the one that grows faster
+5    | Drop constants and small terms         | Keep only the highest-growing term (e.g., n²)
+6    | Write final Big O notation             | O(1), O(n), O(n²), O(log n), etc.
+
+Quick Tip:
+- Single loop        → O(n)
+- Nested loop        → O(n²)
+- Halving each time → O(log n)
+- Constant work      → O(1)
