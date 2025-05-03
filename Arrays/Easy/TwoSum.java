@@ -45,7 +45,7 @@ Follow-up: Can you come up with an algorithm that is less than O(n2) time comple
 //Online Java Compiler
 //Use this editor to write, compile and run your Java code online
 import java.util.Arrays;
-class Main {
+class Q1 {
 	//solution 1:
 // public int[] twoSum(int[] nums, int target) {
 //     int ret[] = new int[2];
@@ -68,6 +68,7 @@ class Main {
 // }
 
 //solution 1: error case nums = [3,2,3]
+//Big O = O(n)	
 	
 //solution 2:
 /*
@@ -89,9 +90,10 @@ nums[i] + nums[j] == target and i != j
      }
      return ret;
  }
+ //Big O = O(n^2)
  
  public static void main(String[] args) {
-     Main m = new Main();
+     Q1 m = new Q1();
      //array declaration static
      //int [] nums = new int[]{3,2,4};
      int[] nums={3,2,4};
