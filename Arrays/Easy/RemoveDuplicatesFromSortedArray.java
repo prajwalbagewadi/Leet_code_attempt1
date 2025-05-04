@@ -64,7 +64,7 @@ public class Q2 {
 		return l;
 	}
 	//Big O = O(n) complexity
-	
+	//Space Complexity: O(1),
 	public static void main(String[] args) {
 		Q2 m = new Q2();
 		int[] nums = {0,0,1,1,1,2};
